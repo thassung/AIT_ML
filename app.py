@@ -43,6 +43,7 @@ app.layout = html.Div([
     Input('input10', 'seats'),
     Input('input11', 'seller_type')
 )
+
 def update_prediction(input1, input2=2015, input3=0, input4=1, input5=1, 
                       input6=60000, input7=19.3, input8=None, input9=82.85, 
                       input10=5, input11=None):
