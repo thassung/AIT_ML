@@ -1,0 +1,22 @@
+[Info  - 12:45:13 PM] (5396) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 12:45:13 PM] (5396) Server root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 12:45:13 PM] (5396) Starting service instance "root"
+[Info  - 12:45:13 PM] (5396) Setting pythonPath for service "root": "/bin/python3"
+[Warn  - 12:45:13 PM] (5396) stubPath /root/typings is not a valid directory.
+[Info  - 12:45:13 PM] (5396) Assuming Python version 3.11
+[Info  - 12:45:18 PM] (5396) No source files found.
+[Info  - 12:45:18 PM] (5396) Background analysis(1) root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 12:45:18 PM] (5396) Background analysis(1) started
+[Info  - 12:45:21 PM] (5396) [FG] Long operation: parsing: /root/code/scratch.ipynb:pylance-notebook-cell:W0sdnNjb2RlLXJlbW90ZQ==.py (3370ms)
+[Info  - 12:45:22 PM] (5396) Indexer background runner(2) root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist (index)
+[Info  - 12:45:22 PM] (5396) Indexing(2) started
+[Info  - 12:45:23 PM] (5396) [BG(1)] Long operation: parsing: /root/code/scratch.ipynb:pylance-notebook-cell:W0sdnNjb2RlLXJlbW90ZQ==.py (4374ms)
+[Info  - 12:45:23 PM] (5396) [BG(1)] Long operation: getSemanticTokens full at /root/code/scratch.ipynb:pylance-notebook-cell:W0sdnNjb2RlLXJlbW90ZQ==.py (4765ms)
+[Info  - 12:45:38 PM] (5396) [IDX(2)] Long operation: scan packages /root (18972ms)
+[Info  - 12:45:38 PM] (5396) scanned(2) 14 files over 1 exec env
+[Info  - 12:45:44 PM] (5396) [IDX(2)] Long operation: parsing: /usr/lib/python3.11/xml/__init__.py (6686ms)
+[Info  - 12:45:45 PM] (5396) [IDX(2)] Long operation: indexing: /usr/lib/python3.11/xml/__init__.py (6884ms)
+[Info  - 12:45:45 PM] (5396) [IDX(2)] Long operation: index execution environment /root (6900ms)
+[Info  - 12:45:45 PM] (5396) [IDX(2)] Long operation: index packages /root (6917ms)
+[Info  - 12:45:45 PM] (5396) indexed(2) 1 files over 1 exec env
+[Info  - 12:45:45 PM] (5396) Indexing finished(2).

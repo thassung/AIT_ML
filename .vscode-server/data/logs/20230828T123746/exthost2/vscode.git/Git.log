@@ -1,0 +1,26 @@
+2023-08-28 12:38:27.278 [info] Log level: Info
+2023-08-28 12:38:27.280 [info] Validating found git in: "git"
+2023-08-28 12:38:27.281 [info] Using git "2.39.2" from "git"
+2023-08-28 12:38:27.282 [info] > git rev-parse --show-toplevel [361ms]
+2023-08-28 12:38:27.283 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-08-28 12:38:27.284 [info] > git rev-parse --show-toplevel [3ms]
+2023-08-28 12:38:27.285 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-08-28 12:38:27.366 [info] > git rev-parse --show-toplevel [122ms]
+2023-08-28 12:38:27.367 [info] fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-08-28 12:38:27.390 [info] > git rev-parse --show-toplevel [8ms]
+2023-08-28 12:38:27.391 [info] fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-08-28 12:38:48.147 [info] > git rev-parse --show-toplevel [8ms]
+2023-08-28 12:38:48.148 [info] fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-08-28 12:39:14.383 [info] > git rev-parse --show-toplevel [8ms]
+2023-08-28 12:39:14.384 [info] fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-08-28 12:39:30.618 [info] > git rev-parse --show-toplevel [3ms]
+2023-08-28 12:39:30.618 [info] fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-08-28 12:45:07.981 [info] > git rev-parse --show-toplevel [4ms]
+2023-08-28 12:45:07.982 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-08-28 12:45:08.146 [info] > git rev-parse --show-toplevel [11ms]
+2023-08-28 12:45:08.147 [info] fatal: not a git repository (or any of the parent directories): .git

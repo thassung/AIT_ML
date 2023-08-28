@@ -1,0 +1,12 @@
+Experiment 'pythonPromptNewFormatterExt' is active
+Experiment 'pythonPromptNewToolsExt' is active
+Experiment 'pythonTestAdapter' is active
+LSP Notebooks experiment is enabled
+LSP Notebooks interactive window support is enabled
+> conda info --json
+Python interpreter path: /bin/python3
+> /bin/python3 -I ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 -I ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/local/bin/python -I ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+Starting Pylance language server.
+Jupyter provided interpreter path override: /bin/python3

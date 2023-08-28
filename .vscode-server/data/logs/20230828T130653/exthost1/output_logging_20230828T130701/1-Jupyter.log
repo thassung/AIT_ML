@@ -1,0 +1,25 @@
+Visual Studio Code (1.75.1, attached-container, desktop)
+Jupyter Extension Version: 2023.1.2010391206.
+Python Extension Version: 2023.4.1.
+Workspace folder /root
+info 13:07:05.608: LSP Notebooks experiment is enabled
+info 13:07:06.564: Find preferred kernel for /root/code/scratch.ipynb with metadata {"orig_nbformat":4,"language_info":{"name":"python"}} & preferred interpreter /bin/python3
+info 13:07:06.565: Find preferred kernel for /root/code/scratch.ipynb with metadata {"orig_nbformat":4,"language_info":{"name":"python"}} & preferred interpreter /bin/python3
+info 13:07:06.631: Find preferred kernel for /root/code/scratch.ipynb with metadata {"orig_nbformat":4,"language_info":{"name":"python"}} & preferred interpreter /bin/python3
+info 13:07:06.656: Find preferred kernel for /root/code/scratch.ipynb with metadata {"orig_nbformat":4,"language_info":{"name":"python"}} & preferred interpreter /bin/python3
+info 13:07:06.891: Process Execution: > /bin/python3 -m pip list
+> /bin/python3 -m pip list
+info 13:07:06.967: Process Execution: > /bin/python3 -c "import pip;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+> /bin/python3 -c "import pip;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+error 13:07:07.021: interpreterPackages getPackageInformation, Class name = xl, completed in 448ms, has a falsy return value, Arg 1: {"interpreter":{"id":"/bin/python3","sysPrefix":"/usr","displayPath":{"$mid":1,"path":"/bin/python3","scheme":"file"},"envName":"","uri":{"$mid":1,"fsPath":"/bin/python3","external":"file:///bin/python3","path":"/bin/python3","scheme":"file"},"displayName":"","envType":"Unknown","version":{"major":3,"minor":11,"patch":2,"raw":"3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]"}}} [Qa [Error]: Module 'pip' not installed.
+	at Xa.execModule (/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/out/extension.node.js:2:1806741)
+	at processTicksAndRejections (node:internal/process/task_queues:96:5)
+	at async xl.getPackageInformation (/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/out/extension.node.js:17:38262)] {
+  category: 'notinstalled',
+  moduleName: 'pip'
+}
+info 13:07:07.134: Preferred kernel .jvsc74a57bd0916dbcbb3f70747c44a77c7bcd40155683ae19c65e1c03b4aa3499c5328201f1./bin/python3./bin/python3.-m#ipykernel_launcher is exact match or top match for non python kernels, (false, [object Object], false, false)
+info 13:07:07.138: PreferredConnection: .jvsc74a57bd0916dbcbb3f70747c44a77c7bcd40155683ae19c65e1c03b4aa3499c5328201f1./bin/python3./bin/python3.-m#ipykernel_launcher found for NotebookDocument: /root/code/scratch.ipynb
+info 13:13:29.820: Shutting down notebooks for 9f46eeee-2bd3-4b9b-8f6c-27c47cd94acc
+info 13:13:29.820: Disposing HostJupyterExecution 6d779941-a747-488b-97d0-9f16019cc9b1
+info 13:13:29.821: Disposing HostJupyterExecution 6d779941-a747-488b-97d0-9f16019cc9b1

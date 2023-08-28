@@ -1,0 +1,22 @@
+[Info  - 1:07:08 PM] (522) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 1:07:09 PM] (522) Server root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:07:09 PM] (522) Starting service instance "root"
+[Info  - 1:07:09 PM] (522) Background analysis(1) root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:07:09 PM] (522) Background analysis(1) started
+[Info  - 1:07:09 PM] (522) Setting pythonPath for service "root": "/bin/python3"
+[Warn  - 1:07:09 PM] (522) stubPath /root/typings is not a valid directory.
+[Info  - 1:07:09 PM] (522) Assuming Python version 3.11
+[Info  - 1:07:11 PM] (522) No source files found.
+[Info  - 1:07:14 PM] (522) [FG] Long operation: parsing: /root/code/scratch.ipynb:pylance-notebook-cell:W0sdnNjb2RlLXJlbW90ZQ==.py (2764ms)
+[Info  - 1:07:14 PM] (522) Indexer background runner(2) root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist (index)
+[Info  - 1:07:14 PM] (522) Indexing(2) started
+[Info  - 1:07:15 PM] (522) [BG(1)] Long operation: parsing: /root/code/scratch.ipynb:pylance-notebook-cell:W0sdnNjb2RlLXJlbW90ZQ==.py (3616ms)
+[Info  - 1:07:15 PM] (522) [BG(1)] Long operation: getSemanticTokens full at /root/code/scratch.ipynb:pylance-notebook-cell:W0sdnNjb2RlLXJlbW90ZQ==.py (3925ms)
+[Info  - 1:07:27 PM] (522) [IDX(2)] Long operation: scan packages /root (15090ms)
+[Info  - 1:07:27 PM] (522) scanned(2) 14 files over 1 exec env
+[Info  - 1:07:31 PM] (522) [IDX(2)] Long operation: parsing: /usr/lib/python3.11/xml/__init__.py (3684ms)
+[Info  - 1:07:31 PM] (522) [IDX(2)] Long operation: indexing: /usr/lib/python3.11/xml/__init__.py (3979ms)
+[Info  - 1:07:31 PM] (522) [IDX(2)] Long operation: index execution environment /root (3989ms)
+[Info  - 1:07:31 PM] (522) [IDX(2)] Long operation: index packages /root (4000ms)
+[Info  - 1:07:31 PM] (522) indexed(2) 1 files over 1 exec env
+[Info  - 1:07:31 PM] (522) Indexing finished(2).

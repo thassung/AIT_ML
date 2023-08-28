@@ -1,0 +1,27 @@
+Experiment 'pythonPromptNewFormatterExt' is active
+Experiment 'pythonPromptNewToolsExt' is active
+Experiment 'pythonTestAdapter' is active
+LSP Notebooks experiment is enabled
+LSP Notebooks interactive window support is enabled
+> conda info --json
+> C:\Users\sung2_8l7o06c\AppData\Local\Programs\Python\Python311\python.exe -c "import sys;print(sys.executable)"
+[ERROR 2023-7-28 12:45:11.690]: [Error: Command failed: C:\Users\sung2_8l7o06c\AppData\Local\Programs\Python\Python311\python.exe -c "import sys;print(sys.executable)"
+/bin/sh: 1: C:Userssung2_8l7o06cAppDataLocalProgramsPythonPython311python.exe: not found
+
+	at ChildProcess.exithandler (node:child_process:399:12)
+	at ChildProcess.emit (node:events:526:28)
+	at maybeClose (node:internal/child_process:1092:16)
+	at Socket.<anonymous> (node:internal/child_process:451:11)
+	at Socket.emit (node:events:526:28)
+	at Pipe.<anonymous> (node:net:687:12)] {
+  killed: false,
+  code: 127,
+  signal: null,
+  cmd: 'C:\\Users\\sung2_8l7o06c\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -c "import sys;print(sys.executable)"'
+}
+> /bin/python3 -I ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 -I ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+> /usr/local/bin/python -I ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/get_output_via_markers.py ./.vscode-server/extensions/ms-python.python-2023.4.1/pythonFiles/interpreterInfo.py
+Python interpreter path: /bin/python3
+Starting Pylance language server.
+Jupyter provided interpreter path override: /bin/python3

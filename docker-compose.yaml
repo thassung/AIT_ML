@@ -1,0 +1,12 @@
+version: '3.9'
+services: 
+  dash: 
+    image: thassung/demoapp:v0.1
+    build:
+      context: .
+      dockerfile: dash.Dockerfile
+    volumes:
+      - ./.vscode-server:/root/.vscode-server
+      - ./code:/root/code
+    ports:
+      - 9999:8050
