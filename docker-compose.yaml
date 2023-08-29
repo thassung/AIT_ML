@@ -11,3 +11,4 @@ services:
     ports:
       - 9999:8050
     command: ["python", "app.py"]
+.
