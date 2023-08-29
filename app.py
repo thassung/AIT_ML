@@ -1,117 +1,235 @@
 import dash
-from dash import dcc, html
-from dash.dependencies import Input, Output
 import joblib
+from dash import Dash, html, callback, Output, Input, State, dcc
+import dash_bootstrap_components as dbc
+import pandas as pd
 import numpy as np
 import pickle
-import pandas as pd
-from sklearn.preprocessing import StandardScaler
-
-model = joblib.load('./code/model/rf_random_selling_price.model')
 
 app = dash.Dash(__name__)
+dash.register_page('demoapp', path='/app2')
 
-app.layout = html.Div([
-    html.H1("Car Selling Price Prediction"),
-    
-    dcc.Input(id='input1', type='text', placeholder='brand'),
-    dcc.Input(id='input2', type='number', placeholder='built year'),
-    dcc.Input(id='input3', type='text', placeholder='petrol or diesel'),
-    dcc.Input(id='input4', type='text', placeholder='manual or auto transmission'),
-    dcc.Input(id='input5', type='number', placeholder='order of ownership'),
-    dcc.Input(id='input6', type='number', placeholder='km driven'),
-    dcc.Input(id='input7', type='number', placeholder='mileage (km/l)'),
-    dcc.Input(id='input8', type='number', placeholder='engine capacity (cc)'),
-    dcc.Input(id='input9', type='number', placeholder='max power (bhp)'),
-    dcc.Input(id='input10', type='number', placeholder='No. of seats'),
-    dcc.Input(id='input11', type='number', placeholder='seller type'),
-    
-    html.Div(id='prediction-output')
-])
 
-@app.callback(
-    Output('prediction-output', 'selling_price'),
-    Input('input1', 'brand'),
-    Input('input2', 'year'),
-    Input('input3', 'fuel'),
-    Input('input4', 'transmission'),
-    Input('input5', 'owner'),
-    Input('input6', 'km_driven'),
-    Input('input7', 'mileage'),
-    Input('input8', 'engine'),
-    Input('input9', 'max_power'),
-    Input('input10', 'seats'),
-    Input('input11', 'seller_type')
+# Creating FORM
+# x_1 = html.Div(
+#     [
+#         dbc.Label("Brand: ", html_for="example-email"),
+#         dbc.Input(id="x_1", type="value", placeholder=" ex. Fiat, Mercedez-Benz"),
+#         dbc.FormText(
+#             " please capitalize the first letter",
+#             color="secondary",
+#         ),
+#     ],
+#     className="mb-3",
+# )
+
+x_1 = html.Div(
+    [
+        dbc.Label("Car brand: ", html_for="example-email"),
+        dcc.Dropdown(id='x_1',
+            options=[
+                {'label': 'Ambassador', 'value': 1},
+                {'label': 'Ashok', 'value': 2},
+                {'label': 'Audi', 'value': 3},
+                {'label': 'BMW', 'value': 4},
+                {'label': 'Chevrolet', 'value': 5},
+                {'label': 'Daewoo', 'value': 6},
+                {'label': 'Datsun', 'value': 7},
+                {'label': 'Fiat', 'value': 8},
+                {'label': 'Force', 'value': 9},
+                {'label': 'Ford', 'value': 10},
+                {'label': 'Honda', 'value': 11},
+                {'label': 'Hyundai', 'value': 12},
+                {'label': 'Isuzu', 'value': 13},
+                {'label': 'Jaguar', 'value': 14},
+                {'label': 'Jeep', 'value': 15},
+                {'label': 'Kia', 'value': 16},
+                {'label': 'Land', 'value': 17},
+                {'label': 'Lexus', 'value': 18},
+                {'label': 'MG', 'value': 19},
+                {'label': 'Mahindra', 'value': 20},
+                {'label': 'Maruti', 'value': 21},
+                {'label': 'Mercedes-Benz', 'value': 22},
+                {'label': 'Mitsubishi', 'value': 23},
+                {'label': 'Nissan', 'value': 24},
+                {'label': 'Opel', 'value': 25},
+                {'label': 'Peugeot', 'value': 26},
+                {'label': 'Renault', 'value': 27},
+                {'label': 'Skoda', 'value': 28},
+                {'label': 'Tata', 'value': 29},
+                {'label': 'Toyota', 'value': 30},
+                {'label': 'Volkswagen', 'value': 31},
+                {'label': 'Volvo', 'value': 32},
+                {'label': 'Other/Unknown', 'value': 0}
+            ],
+            value='0', placeholder=' select car brand'),
+        dbc.FormText(
+            " \n",
+            color="secondary",
+        ),
+    ],
+    style={"width": "15%"},
+    className="mb-3",
 )
 
-# def update_output_div(update_prediction(input1, input2, input3, input4, 
-#                                         input5, input6, input7, input8, 
-#                                         input9, input10, input11)):
-#     return f'Output: {}'
 
-def update_prediction(input1=None, input2=2015, input3=0, input4=1, input5=1, 
-                      input6=60000, input7=19.3, input8=None, input9=82.85, 
-                      input10=5, input11=None):
+x_2 = html.Div(
+    [
+        dbc.Label("Built year: ", html_for="example-email"),
+        dbc.Input(id="x_2", type="number", placeholder=" ex. 1999, 2015"),
+        dbc.FormText(
+            "",
+            color="secondary",
+        ),
+    ],
+    className="mb-3",
+)
 
-    print(input3)
-    if input3 is str:
-        if input3.lowercase() == 'petrol':
-            input3 = 1
-        elif input3.lowercase() == 'diesel':
-            input3 = 0
-        else:
-            input3 = 0
-    
-    if input4 is str:
-        if input4.lowercase()[:4] == 'auto':
-            input4 = 0
-        elif input4.lowercase() == 'manual':
-            input4 = 1
-        else:
-            input4 = 1
-    
-    if input8 is None:
-        if input3 == 0:
-            input8 = 1497
-        elif input3 == 1:
-            input8 = 1197
-        else:
-            input8 = 1248
-    
-    if input11 is None:
-        input11_1 = 1  #indi
-        input11_2 = 0  #trust
+x_3 = html.Div(
+    [
+        dbc.Label("Transmission: ", html_for="example-email"),
+        dcc.Dropdown(id='x_3',
+            options=[
+                {'label': 'Automatic', 'value': 0},
+                {'label': 'Manual', 'value': 1}
+            ],
+            value='0', placeholder=' select transmission type'),
+        dbc.FormText(
+            " \n",
+            color="secondary",
+        ),
+    ],
+    style={"width": "15%"},
+    className="mb-3",
+)
+# x_3 = html.Div(
+#     [
+#         dbc.Label("Transmission: ", html_for="example-email"),
+#         dbc.Input(id="x_3", type="number", placeholder=" 0 or 1"),
+#         dbc.FormText(
+#             " 0 for Auto and 1 for Manual",
+#             color="secondary",
+#         ),
+#     ],
+#     className="mb-3",
+# )
 
-    tbs = np.array([input6, input7, input8, input9])
-    tbs = tbs.reshape(1, -1)
+x_4 = html.Div(
+    [
+        dbc.Label("Engine capacity: ", html_for="example-email"),
+        dbc.Input(id="x_4", type="number", placeholder=" unit is CC"),
+        dbc.FormText(
+            " CC",
+            color="secondary",
+        ),
+    ],
+    className="mb-3",
+)
+
+x_5 = html.Div(
+    [
+        dbc.Label("Max power: ", html_for="example-email"),
+        dbc.Input(id="x_5", type="number", placeholder=" unit is bhp"),
+        dbc.FormText(
+            " bhp",
+            color="secondary",
+        ),
+    ],
+    className="mb-3",
+)
+
+submit_button = html.Div([
+            dbc.Button(id="submit_button", children="Submit", color="primary", className="me-1"),
+            dbc.Label("  "),
+            html.Output(id="selling_price", 
+                        children='')
+            ], style={'marginTop':'10px'})
+
+form =  dbc.Form([
+            x_1, x_2, x_3, x_4, x_5,
+            submit_button ,
+
+        ],
+        className="mb-3")
+
+
+# Explain Text
+text = html.Div([
+    html.H1("Car Predicing (predict pricing)"),
+    html.P("The model is a RandomForest model."),
+])
+
+# Dataset Example
+from dash import Dash, dash_table
+import pandas as pd
+df = pd.read_csv('./code/data/Cars - Cars.csv')
+
+table = dbc.Table.from_dataframe(df.head(50), 
+                        striped=True, 
+                        bordered=True, 
+                        hover=True,
+                        responsive=True,
+                        size='sm'
+                            )
+
+app.layout =  dbc.Container([
+        text,
+        form,
+        html.H1("The Dataset trained in the model (first 50 sentries)"),
+        table
+    ], fluid=True)
+
+@app.callback(
+    Output(component_id="selling_price", component_property="children"),
+    Input(component_id='submit_button', component_property='n_clicks'),
+    State(component_id="x_1", component_property="value"),
+    State(component_id="x_2", component_property="value"),
+    State(component_id="x_3", component_property="value"),
+    State(component_id="x_4", component_property="value"),
+    State(component_id="x_5", component_property="value"),
+    prevent_initial_call=True
+)
+
+def calculate_selling_price(x_1, x_2, x_3, x_4, x_5, submit):
+    
+    model = joblib.load('./code/model/rf_random_selling_price.model')
     scaler = pickle.load(open('./code/model/scaler.pkl','rb'))
+
+    ## scale engine and max_power
+    tbs = pd.DataFrame({'engine':[x_4], 'max_power':[x_5]})
     tbs = scaler.transform(tbs)
-    input6, input7, input8, input9 = tbs.tolist()[0]
+    x_4, x_5 = tbs[0][0], tbs[0][1]
 
-    inputs = np.array([[input1, input2, input6, input3, input4,
-                        input5, input7, input8, input9, input10,
-                        input11_1, input11_2]])
+    ## create dummies value for brand
+    brand_list = ['Ambassador','Ashok','Audi','BMW','Chevrolet','Daewoo','Datsun','Fiat',
+                    'Force','Ford','Honda','Hyundai','Isuzu','Jaguar','Jeep',
+                    'Kia','Land','Lexus','MG','Mahindra','Maruti','Mercedes-Benz',
+                    'Mitsubishi','Nissan','Opel','Peugeot','Renault','Skoda','Tata',
+                    'Toyota','Volkswagen','Volvo']
 
-    brand_list = ['Ambassador', 'Ashok', 'Audi', 'BMW', 'Chevrolet', 
-                     'Daewoo', 'Datsun', 'Fiat', 'Force', 'Ford', 'Honda', 
-                     'Hyundai', 'Isuzu', 'Jaguar', 'Jeep', 'Kia', 'Land', 
-                     'Lexus', 'MG', 'Mahindra', 'Maruti', 'Mercedes-Benz', 
-                     'Mitsubishi', 'Nissan', 'Renault', 'Skoda', 'Tata', 
-                     'Toyota', 'Volkswagen', 'Volvo', 'Opel', 'Peugeot']
+    col_order = ['year','transmission','engine','max_power','b_Ambassador','b_Ashok','b_Audi',
+                'b_BMW','b_Chevrolet','b_Daewoo','b_Datsun','b_Fiat','b_Force','b_Ford',
+                'b_Honda','b_Hyundai','b_Isuzu','b_Jaguar','b_Jeep','b_Kia','b_Land',
+                'b_Lexus','b_MG','b_Mahindra','b_Maruti','b_Mercedes-Benz','b_Mitsubishi',
+                'b_Nissan','b_Opel','b_Peugeot','b_Renault','b_Skoda','b_Tata',
+                'b_Toyota','b_Volkswagen','b_Volvo']
+
     b_cols = np.zeros(len(brand_list))
-    if input1 is not None:
-        for i, col in enumerate(brand_list):
-            if input1.capitalize() == col:
-                b_cols[i] = 1
-            
-    inputs = np.concatenate((inputs[0], b_cols))
-    inputs = inputs[1:]
-    inputs = inputs.reshape(1, -1)
-    print(inputs)
-    prediction = np.exp(model.predict(inputs)[0])
-    
-    return f"Predicted Value: {prediction:.2f}"
-    
+    print(len(b_cols))
+    # if x_1 is not None:
+    #     for i, brand in enumerate(brand_list):
+    #         if x_1 == brand:
+    #             b_cols[i] = 1
+    #             break
+    if x_1 > 0:
+        b_cols[x_1-1] = 1
+
+    X = np.array([x_2, x_3, x_4, x_5])
+    X = np.concatenate([X, b_cols])
+    len(col_order)
+    X = pd.DataFrame([X], columns =col_order)
+    pred = np.exp(model.predict(X))[0]
+    return f"Predicted car price is: {pred:.2f}"
 
 if __name__ == '__main__':
     app.run_server(debug=True)
