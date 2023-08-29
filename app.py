@@ -137,22 +137,20 @@ text = html.Div([
 
 # Dataset Example
 from dash import Dash, dash_table
-import pandas as pd
-df = pd.read_csv('./code/data/Cars - Cars.csv')
+# import pandas as pd
+# df = pd.read_csv('./code/data/Cars - Cars.csv')
 
-table = dbc.Table.from_dataframe(df.head(50), 
-                        striped=True, 
-                        bordered=True, 
-                        hover=True,
-                        responsive=True,
-                        size='sm'
-                            )
+# table = dbc.Table.from_dataframe(df.head(50), 
+#                         striped=True, 
+#                         bordered=True, 
+#                         hover=True,
+#                         responsive=True,
+#                         size='sm'
+#                             )
 
 app.layout =  dbc.Container([
         text,
         form,
-        html.H1("The Dataset trained in the model (first 50 sentries)"),
-        table
     ], fluid=True)
 
 @app.callback(
