@@ -1,0 +1,20 @@
+Visual Studio Code (1.75.1, attached-container, desktop)
+Jupyter Extension Version: 2023.1.2010391206.
+Python Extension Version: 2023.4.1.
+Workspace folder /root
+info 14:14:42.475: LSP Notebooks experiment is enabled
+info 14:14:43.335: Find preferred kernel for /root/code/train.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.11.5"},"orig_nbformat":4,"vscode":{"interpreter":{"hash":"8e4ec63297a9306813d7e83258dafae3e2212f01549251d77cd4053ea85a4de0"}}} & preferred interpreter /bin/python3
+info 14:14:43.342: Find preferred kernel for /root/code/train.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.11.5"},"orig_nbformat":4,"vscode":{"interpreter":{"hash":"8e4ec63297a9306813d7e83258dafae3e2212f01549251d77cd4053ea85a4de0"}}} & preferred interpreter /bin/python3
+info 14:14:43.870: Find preferred kernel for /root/code/train.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.11.5"},"orig_nbformat":4,"vscode":{"interpreter":{"hash":"8e4ec63297a9306813d7e83258dafae3e2212f01549251d77cd4053ea85a4de0"}}} & preferred interpreter /bin/python3
+info 14:14:43.895: Find preferred kernel for /root/code/train.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.11.5"},"orig_nbformat":4,"vscode":{"interpreter":{"hash":"8e4ec63297a9306813d7e83258dafae3e2212f01549251d77cd4053ea85a4de0"}}} & preferred interpreter /bin/python3
+info 14:14:44.406: Process Execution: > /bin/python3 -m pip list
+> /bin/python3 -m pip list
+info 14:14:44.850: Process Execution: > /bin/python3 -c "import pip;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+> /bin/python3 -c "import pip;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+error 14:14:44.968: interpreterPackages getPackageInformation, Class name = xl, completed in 1641ms, has a falsy return value, Arg 1: {"interpreter":{"id":"/bin/python3","sysPrefix":"/usr","displayPath":{"$mid":1,"path":"/bin/python3","scheme":"file"},"envName":"","uri":{"$mid":1,"fsPath":"/bin/python3","external":"file:///bin/python3","path":"/bin/python3","scheme":"file"},"displayName":"","envType":"Unknown","version":{"major":3,"minor":11,"patch":2,"raw":"3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]"}}} [Qa [Error]: Module 'pip' not installed.
+	at Xa.execModule (/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/out/extension.node.js:2:1806741)
+	at processTicksAndRejections (node:internal/process/task_queues:96:5)
+	at async xl.getPackageInformation (/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/out/extension.node.js:17:38262)] {
+  category: 'notinstalled',
+  moduleName: 'pip'
+}

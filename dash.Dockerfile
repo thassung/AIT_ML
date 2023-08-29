@@ -1,13 +1,9 @@
 FROM python:3.9-bookworm
 
-# WORKDIR /code
+WORKDIR /root
 
-# COPY requirements.txt .
-RUN pip3 install pandas
-RUN pip3 install ipykernel
-RUN pip3 install dash
-
-# COPY . .
+COPY ./ /root/
+RUN pip3 install -r requirements.txt
 
 # EXPOSE 5000
 

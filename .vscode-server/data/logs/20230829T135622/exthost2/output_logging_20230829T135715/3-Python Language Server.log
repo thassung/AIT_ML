@@ -1,0 +1,41 @@
+[Info  - 1:57:19 PM] (1080) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 1:57:19 PM] (1080) Server root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:57:19 PM] (1080) Starting service instance "attached-container+7b22636f6e7461696e65724e616d65223a222f61737369676e6d656e74312d646173682d31227d"
+[Warn  - 1:57:20 PM] (1080) stubPath /typings is not a valid directory.
+[Warn  - 1:57:22 PM] (1080) Skipping recursive symlink "/bin/X11" -> "/usr/bin"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/1/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/1/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/1/task/1/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/1/task/1/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/108/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/108/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/122/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/122/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/125/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/125/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/126/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/126/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/127/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/127/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/128/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/128/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/140/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/140/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/222/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/222/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/223/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/223/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/224/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/224/root" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/225/cwd" -> "/"
+[Warn  - 1:57:23 PM] (1080) Skipping recursive symlink "/proc/108/task/225/root" -> "/"
+[Error - 1:57:32 PM] (1080) Enumeration of workspace source files is taking longer than 10 seconds.
+This may be because:
+* You have opened your home directory or entire hard drive as a workspace
+* Your workspace contains a very large number of directories and files
+* Your workspace contains a symlink to a directory with many files
+* Your workspace is remote, and file enumeration is slow
+To reduce this time, open a workspace directory with fewer files or add a pyrightconfig.json configuration file with an "exclude" section to exclude subdirectories from your workspace. For more details, refer to https://github.com/microsoft/pyright/blob/main/docs/configuration.md.
+[Warn  - 1:58:16 PM] (1080) Skipping recursive symlink "/proc/1080/root" -> "/"

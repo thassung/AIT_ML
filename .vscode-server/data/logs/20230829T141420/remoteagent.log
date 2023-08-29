@@ -1,0 +1,46 @@
+2023-08-29 14:14:21.157 [info] 
+
+
+
+
+2023-08-29 14:14:21.158 [info] Extension host agent started.
+2023-08-29 14:14:21.881 [info] [127.0.0.1][58536fb9][ManagementConnection] New connection established.
+2023-08-29 14:14:22.066 [info] [127.0.0.1][1087ea7d][ExtensionHostConnection] New connection established.
+2023-08-29 14:14:22.091 [info] [127.0.0.1][1087ea7d][ExtensionHostConnection] <323> Launched Extension Host Process.
+2023-08-29 14:14:22.136 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0/package.json: [0, 63] Invalid symbol.
+2023-08-29 14:14:22.137 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0/package.json: [64, 79] Invalid symbol.
+2023-08-29 14:14:22.138 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0/package.json: [144, 26] Invalid symbol.
+2023-08-29 14:14:22.139 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.0/package.json: [170, 1] Value expected.
+2023-08-29 14:14:22.381 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [0, 72] Invalid symbol.
+2023-08-29 14:14:22.384 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [73, 39] Invalid symbol.
+2023-08-29 14:14:22.386 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [113, 159] Invalid symbol.
+2023-08-29 14:14:22.388 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [273, 383] Invalid symbol.
+2023-08-29 14:14:22.392 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [657, 135] Invalid symbol.
+2023-08-29 14:14:22.394 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [793, 15] Invalid symbol.
+2023-08-29 14:14:22.395 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [809, 7] Invalid symbol.
+2023-08-29 14:14:22.396 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [817, 7] Invalid symbol.
+2023-08-29 14:14:22.398 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [825, 15] Invalid symbol.
+2023-08-29 14:14:22.399 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [841, 47] Invalid symbol.
+2023-08-29 14:14:22.400 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [889, 15] Invalid symbol.
+2023-08-29 14:14:22.400 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [905, 319] Invalid symbol.
+2023-08-29 14:14:22.401 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [1225, 23] Invalid symbol.
+2023-08-29 14:14:22.402 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [1249, 332] Invalid symbol.
+2023-08-29 14:14:22.407 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [1582, 220] Invalid symbol.
+2023-08-29 14:14:22.408 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [1803, 15] Invalid symbol.
+2023-08-29 14:14:22.409 [error] [/root/.vscode-server/extensions/ms-python.python-2023.4.1]: Failed to parse /root/.vscode-server/extensions/ms-python.python-2023.4.1/package.json: [1849, 1] End of file expected.
+2023-08-29 14:14:22.572 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [80934, 18] .
+2023-08-29 14:14:22.575 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [80973, 50] Invalid symbol.
+2023-08-29 14:14:22.578 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81040, 1] Colon expected.
+2023-08-29 14:14:22.580 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81058, 8] Invalid symbol.
+2023-08-29 14:14:22.581 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81067, 23] Invalid symbol.
+2023-08-29 14:14:22.583 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81092, 7] Invalid symbol.
+2023-08-29 14:14:22.585 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81100, 1] Property name expected.
+2023-08-29 14:14:22.587 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81122, 2] Invalid symbol.
+2023-08-29 14:14:22.588 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81125, 20] Invalid symbol.
+2023-08-29 14:14:22.588 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81172, 17] Invalid symbol.
+2023-08-29 14:14:22.590 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81190, 1] Invalid symbol.
+2023-08-29 14:14:22.591 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81193, 1] Invalid symbol.
+2023-08-29 14:14:22.592 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81215, 1] Value expected.
+2023-08-29 14:14:22.593 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81237, 2] Invalid symbol.
+2023-08-29 14:14:22.594 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81240, 16] Invalid symbol.
+2023-08-29 14:14:22.596 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [81257, 1] End of file expected.

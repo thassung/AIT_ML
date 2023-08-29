@@ -1,0 +1,30 @@
+2023-08-29 13:56:23.448 [info] 
+
+
+
+
+2023-08-29 13:56:23.450 [info] Extension host agent started.
+2023-08-29 13:56:24.970 [info] [127.0.0.1][a658c813][ManagementConnection] New connection established.
+2023-08-29 13:56:24.978 [info] [127.0.0.1][8d4c9689][ExtensionHostConnection] New connection established.
+2023-08-29 13:56:25.002 [info] [127.0.0.1][8d4c9689][ExtensionHostConnection] <328> Launched Extension Host Process.
+2023-08-29 13:57:01.780 [info] [127.0.0.1][a658c813][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-08-29 13:57:01.814 [info] [127.0.0.1][8d4c9689][ExtensionHostConnection] <328> Extension Host Process exited with code: 0, signal: null.
+2023-08-29 13:57:10.094 [info] [127.0.0.1][695971c4][ManagementConnection] New connection established.
+2023-08-29 13:57:10.581 [info] [127.0.0.1][a1db0d8f][ExtensionHostConnection] New connection established.
+2023-08-29 13:57:10.730 [info] [127.0.0.1][a1db0d8f][ExtensionHostConnection] <934> Launched Extension Host Process.
+2023-08-29 13:57:23.580 [error] [File Watcher (parcel)] Unexpected error: No such file or directory (EUNKNOWN) (path: /)
+2023-08-29 13:57:23.582 [error] [File Watcher (universal)] restarting watcher after error: No such file or directory
+2023-08-29 13:57:34.619 [error] [File Watcher (parcel)] Unexpected error: No such file or directory (EUNKNOWN) (path: /)
+2023-08-29 13:57:34.620 [error] [File Watcher (universal)] restarting watcher after error: No such file or directory
+2023-08-29 13:57:46.370 [error] [File Watcher (parcel)] Unexpected error: No such file or directory (EUNKNOWN) (path: /)
+2023-08-29 13:57:46.371 [error] [File Watcher (universal)] restarting watcher after error: No such file or directory
+2023-08-29 13:58:03.070 [error] [File Watcher (parcel)] Unexpected error: No such file or directory (EUNKNOWN) (path: /)
+2023-08-29 13:58:03.073 [error] [File Watcher (universal)] restarting watcher after error: No such file or directory
+2023-08-29 13:58:20.783 [info] [127.0.0.1][695971c4][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-08-29 13:58:22.947 [info] [127.0.0.1][a1db0d8f][ExtensionHostConnection] <934> Extension Host Process exited with code: 0, signal: null.
+2023-08-29 13:58:29.571 [info] [127.0.0.1][a6d38934][ManagementConnection] New connection established.
+2023-08-29 13:58:30.199 [error] [/root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206]: Failed to parse /root/.vscode-server/extensions/ms-toolsai.jupyter-2023.1.2010391206/package.json: [83868, 1] End of file expected.
+2023-08-29 13:58:30.416 [info] [127.0.0.1][340fe564][ExtensionHostConnection] New connection established.
+2023-08-29 13:58:30.511 [info] [127.0.0.1][340fe564][ExtensionHostConnection] <2008> Launched Extension Host Process.
+2023-08-29 14:04:26.740 [info] [127.0.0.1][a6d38934][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-08-29 14:04:27.026 [info] [127.0.0.1][340fe564][ExtensionHostConnection] <2008> Extension Host Process exited with code: 0, signal: null.

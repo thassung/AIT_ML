@@ -1,0 +1,28 @@
+[Info  - 1:58:51 PM] (2372) Pylance language server 2023.5.30 (pyright e1b6074b) starting
+[Info  - 1:58:51 PM] (2372) Server root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:58:51 PM] (2372) Starting service instance "root"
+[Info  - 1:58:52 PM] (2372) Setting pythonPath for service "root": "/bin/python3"
+[Warn  - 1:58:52 PM] (2372) stubPath /root/typings is not a valid directory.
+[Info  - 1:58:52 PM] (2372) Assuming Python version 3.11
+[Info  - 1:58:56 PM] (2372) No source files found.
+[Info  - 1:58:56 PM] (2372) Background analysis(1) root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist
+[Info  - 1:58:56 PM] (2372) Background analysis(1) started
+[Info  - 1:58:57 PM] (2372) Indexer background runner(2) root directory: /root/.vscode-server/extensions/ms-python.vscode-pylance-2023.5.30/dist (index)
+[Info  - 1:58:57 PM] (2372) Indexing(2) started
+[Info  - 1:59:01 PM] (2372) [BG(1)] Long operation: parsing: /root/code/train.ipynb:pylance-notebook-cell:pylancePrefixCell.py (3833ms)
+[Info  - 1:59:01 PM] (2372) [BG(1)] Long operation: analyzing: /root/code/train.ipynb:pylance-notebook-cell:pylancePrefixCell.py (4645ms)
+[Info  - 1:59:05 PM] (2372) [BG(1)] Long operation: checking: /root/code/train.ipynb:pylance-notebook-cell:W3sdnNjb2RlLXJlbW90ZQ==.py (3251ms)
+[Info  - 1:59:05 PM] (2372) [BG(1)] Long operation: analyzing: /root/code/train.ipynb:pylance-notebook-cell:W3sdnNjb2RlLXJlbW90ZQ==.py (3907ms)
+[Info  - 1:59:08 PM] (2372) [BG(1)] Long operation: checking: /root/code/train.ipynb:pylance-notebook-cell:W5sdnNjb2RlLXJlbW90ZQ==.py (2729ms)
+[Info  - 1:59:08 PM] (2372) [BG(1)] Long operation: analyzing: /root/code/train.ipynb:pylance-notebook-cell:W5sdnNjb2RlLXJlbW90ZQ==.py (2731ms)
+[Info  - 1:59:13 PM] (2372) [IDX(2)] Long operation: scan packages /root (15434ms)
+[Info  - 1:59:13 PM] (2372) scanned(2) 14 files over 1 exec env
+[Info  - 1:59:16 PM] (2372) [BG(1)] Long operation: checking: /root/code/train.ipynb:pylance-notebook-cell:Y213sdnNjb2RlLXJlbW90ZQ==.py (2670ms)
+[Info  - 1:59:16 PM] (2372) [BG(1)] Long operation: analyzing: /root/code/train.ipynb:pylance-notebook-cell:Y213sdnNjb2RlLXJlbW90ZQ==.py (2781ms)
+[Info  - 1:59:20 PM] (2372) [IDX(2)] Long operation: parsing: /usr/lib/python3.11/xml/__init__.py (6762ms)
+[Info  - 1:59:25 PM] (2372) [FG] Long operation: parsing: /root/code/train.ipynb:pylance-notebook-cell:W3sdnNjb2RlLXJlbW90ZQ==.py (5284ms)
+[Info  - 1:59:25 PM] (2372) [IDX(2)] Long operation: indexing: /usr/lib/python3.11/xml/__init__.py (7115ms)
+[Info  - 1:59:25 PM] (2372) [IDX(2)] Long operation: index execution environment /root (7131ms)
+[Info  - 1:59:25 PM] (2372) [IDX(2)] Long operation: index packages /root (7141ms)
+[Info  - 1:59:25 PM] (2372) indexed(2) 1 files over 1 exec env
+[Info  - 1:59:25 PM] (2372) Indexing finished(2).

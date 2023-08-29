@@ -1,0 +1,15 @@
+2023-08-29 14:14:32.602 [info] Log level: Info
+2023-08-29 14:14:32.604 [info] Validating found git in: "git"
+2023-08-29 14:14:32.605 [info] Using git "2.39.2" from "git"
+2023-08-29 14:14:32.606 [info] > git rev-parse --show-toplevel [363ms]
+2023-08-29 14:14:32.649 [info] > git rev-parse --git-dir --git-common-dir [31ms]
+2023-08-29 14:14:32.698 [info] Open repository: /root
+2023-08-29 14:14:32.753 [info] > git rev-parse --show-toplevel [30ms]
+2023-08-29 14:14:32.778 [info] > git config --get commit.template [35ms]
+2023-08-29 14:14:32.786 [info] > git rev-parse --show-toplevel [12ms]
+2023-08-29 14:14:32.787 [info] fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-08-29 14:14:32.838 [info] > git rev-parse --show-toplevel [27ms]
+2023-08-29 14:14:32.839 [info] fatal: not a git repository (or any parent up to mount point /root)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-08-29 14:14:32.848 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [22ms]
