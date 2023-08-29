@@ -44,21 +44,30 @@ app.layout = html.Div([
     Input('input11', 'seller_type')
 )
 
-def update_prediction(input1, input2=2015, input3=0, input4=1, input5=1, 
+# def update_output_div(update_prediction(input1, input2, input3, input4, 
+#                                         input5, input6, input7, input8, 
+#                                         input9, input10, input11)):
+#     return f'Output: {}'
+
+def update_prediction(input1=None, input2=2015, input3=0, input4=1, input5=1, 
                       input6=60000, input7=19.3, input8=None, input9=82.85, 
                       input10=5, input11=None):
 
-    
-    if input3 is not None:
+    print(input3)
+    if input3 is str:
         if input3.lowercase() == 'petrol':
             input3 = 1
         elif input3.lowercase() == 'diesel':
             input3 = 0
+        else:
+            input3 = 0
     
-    if input4 is not None:
+    if input4 is str:
         if input4.lowercase()[:4] == 'auto':
             input4 = 0
         elif input4.lowercase() == 'manual':
+            input4 = 1
+        else:
             input4 = 1
     
     if input8 is None:
@@ -73,10 +82,11 @@ def update_prediction(input1, input2=2015, input3=0, input4=1, input5=1,
         input11_1 = 1  #indi
         input11_2 = 0  #trust
 
-    tbs = [input6, input7, input8, input9]
+    tbs = np.array([input6, input7, input8, input9])
+    tbs = tbs.reshape(1, -1)
     scaler = pickle.load(open('./code/model/scaler.pkl','rb'))
     tbs = scaler.transform(tbs)
-    input6, input7, input8, input9 = tbs
+    input6, input7, input8, input9 = tbs.tolist()[0]
 
     inputs = np.array([[input1, input2, input6, input3, input4,
                         input5, input7, input8, input9, input10,
@@ -88,17 +98,18 @@ def update_prediction(input1, input2=2015, input3=0, input4=1, input5=1,
                      'Lexus', 'MG', 'Mahindra', 'Maruti', 'Mercedes-Benz', 
                      'Mitsubishi', 'Nissan', 'Renault', 'Skoda', 'Tata', 
                      'Toyota', 'Volkswagen', 'Volvo', 'Opel', 'Peugeot']
-    b_cols = np.zeroes(len(brand_list))
-    for i, col in enumerate(brand_list):
-        if input1.capitalize() == col:
-            b_cols[i] = 1
-    
-    inputs = np.concatenate((input, b_cols))
+    b_cols = np.zeros(len(brand_list))
+    if input1 is not None:
+        for i, col in enumerate(brand_list):
+            if input1.capitalize() == col:
+                b_cols[i] = 1
+            
+    inputs = np.concatenate((inputs[0], b_cols))
     inputs = inputs[1:]
     inputs = inputs.reshape(1, -1)
-
+    print(inputs)
     prediction = np.exp(model.predict(inputs)[0])
-        
+    
     return f"Predicted Value: {prediction:.2f}"
     
 
