@@ -207,5 +207,3 @@ def calculate_selling_price(x_1, x_2, x_3, x_4, x_5, submit):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
-
-    .

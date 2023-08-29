@@ -14,5 +14,3 @@ docker compose up --build
 ```
 
 Access the app with http://localhost:9999
-
-.
