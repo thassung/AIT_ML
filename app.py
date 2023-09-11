@@ -170,6 +170,14 @@ def calculate_selling_price(x_1, x_2, x_3, x_4, x_5, submit):
     scaler = pickle.load(open('./code/model/scaler.pkl','rb'))
 
     ## scale engine and max_power
+    if x_4 is None:
+        x_4 = 1248.0
+    if x_5 is None:
+        x_5 = 82.85
+    if x_2 is None or float(x_2) < 1000:
+        x_2 = 2015.0
+    if x_3 is None:
+        x_3 = 0
     tbs = pd.DataFrame({'engine':[x_4], 'max_power':[x_5]})
     tbs = scaler.transform(tbs)
     x_4, x_5 = tbs[0][0], tbs[0][1]
@@ -189,15 +197,9 @@ def calculate_selling_price(x_1, x_2, x_3, x_4, x_5, submit):
                 'b_Toyota','b_Volkswagen','b_Volvo']
 
     b_cols = np.zeros(len(brand_list))
-    print(len(b_cols))
-    # if x_1 is not None:
-    #     for i, brand in enumerate(brand_list):
-    #         if x_1 == brand:
-    #             b_cols[i] = 1
-    #             break
     if x_1 > 0:
         b_cols[x_1-1] = 1
-
+    
     X = np.array([x_2, x_3, x_4, x_5])
     X = np.concatenate([X, b_cols])
     len(col_order)
@@ -205,5 +207,8 @@ def calculate_selling_price(x_1, x_2, x_3, x_4, x_5, submit):
     pred = np.exp(model.predict(X))[0]
     return f"Predicted car price is: {pred:.2f}"
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', debug=True)
+
+if __name__ == "__main__":
+    app.run_server(debug=True)
